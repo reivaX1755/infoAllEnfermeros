@@ -14,8 +14,8 @@ import java.util.List;
 public class NurseController {
 
     @GetMapping
-    public List<Nurse> getAllNurses() {
-        List<Nurse> nurses = new ArrayList<>();
+    public ArrayList<Nurse> getAllNurses() {
+        ArrayList<Nurse> nurses = new ArrayList<>();
         nurses.add(new Nurse("Laura", "laurag", "password123"));
         nurses.add(new Nurse("Carlos", "carlosm", "passCarlos"));
         nurses.add(new Nurse("Marta", "martaf", "martaSecure01"));
